@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<hmtl lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="calc.css">
+    </head>
+    <body>
+        <h1>Calculator</h1>
+        <input type="number" id="first_num" placeholder="Enter first number"><br>
+        <input type="number" id="second_num" placeholder="Enter second number"><br>
+
+        <button onclick="calc('+')">+</button>
+        <button onclick="calc('-')">-</button>
+        <button onclick="calc('*')">*</button>
+        <button onclick="calc('/')">/</button><br>
+
+        <input type="text" id="result" readonly placeholder="Result"> 
+
+        <script src="calc.js"></script>
+    </body>
+</hmtl>
