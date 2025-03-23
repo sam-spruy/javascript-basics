@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <title>Gym Booking System</title>
+        <link rel="stylesheet" href="booking.css">
+    </head>
+     <body>
+        <h1>Gym Booking</h1>
+        <table id="gymTable">
+            <tr>
+                <th>Time of session</th>
+                <th>Name of gym activity</th>
+                <th>Available places</th>
+            </tr>
+        </table>
+
+        <br>
+
+        <input type="time" id="timeInput"/>
+
+        <label for="activityInput">Choose an activity:</label>
+            <select id="activityInput">
+                <option value="Yoga">Yoga</option>
+                <option value="Gaming">Gaming</option>
+                <option value="Sumo Wrestling">Sumo Wrestling</option>
+                <option value="Pilates">Pilates</option>
+                <option value="Badminton">Badminton</option>
+            </select>
+            
+        <input type="number" id="placesInput" placeholder="Available places" min="0"/>
+
+        <br>
+
+        <button type="submit" onclick="addRow()">Submit</button>
+
+
+        <script src="booking.js"></script>
+
+     </body>
+</html>
+
